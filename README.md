@@ -1,12 +1,48 @@
-# React + Vite
+# Password Generator App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a simple Password Generator built with React.  
+It is designed as a learning exercise to understand and practice the following React hooks:
 
-Currently, two official plugins are available:
+- `useState`
+- `useEffect`
+- `useRef`
+- `useCallback`
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Purpose
 
-## Expanding the ESLint configuration
+The main goal of this project is to help you learn how to manage state, handle side effects, reference DOM elements, and optimize functions in React using hooks.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Features
+
+- Generate a random password based on user-selected options:
+  - Adjustable password length (4–16)
+  - Option to include numbers
+  - Option to include special characters
+- Copy generated password to clipboard
+- Responsive and clean UI using Tailwind CSS
+
+## Learning Focus
+
+- **`useState`**: Manage password options and generated password state.
+- **`useEffect`**: Automatically generate a new password when options change.
+- **`useRef`**: Reference the password input for clipboard operations.
+- **`useCallback`**: Optimize the password generation function to avoid unnecessary re-renders.
+
+## Getting Started
+
+1. **Install dependencies:**
+   ```sh
+   npm install
+   ```
+
+2. **Start the development server:**
+   ```sh
+   npm run dev
+   ```
+
+3. **Open your browser:**  
+   Go to [http://localhost:5173](http://localhost:5173) (or the port shown in your terminal).
+
+## License
+
+This project
